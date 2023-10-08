@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sweet life Main Page</title>
+<meta charset="utf-8">
+<meta name="description" content="Web development">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="your name">
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-photo/marbled-blue-abstract-background-liquid-marble-pattern_1258-90996.jpg");
+    background-color: none;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+img{
+    width: 675px;
+    height: 500px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 200px;
+}
+.navbar {
+    background-color: darkpink;
+    overflow: hidden;
+    display: inline-flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    background-color: #db765c;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size:large;
+}
+.navbar a:hover {
+    text-decoration: underline #086444;
+    border-radius: 5px;
+    height: fit-content;
+}
+.secondsection {
+    display: flex;
+    flex-direction: row;
+}
+.textdiv:hover{
+    background-color: lightgreen;
+}
+.textdiv1:hover{
+    background-color: lightcoral;
+}
+.textdiv2:hover{
+    background-color:#0b97b9;
+}
+.textdiv{
+   background-color:#8cae12;
+   color: white;
+   position: relative;
+   text-align: center;
+   right: 0px;
+   width: 50%;
+   height: 500px;
+   font-size: 32px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text{
+    margin-top: 100px;
+}
+.thirdsection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.textdiv1 {
+    background-color: #dd519d;
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 500px;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.forthsection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.textdiv2 {
+    background-color: #57d9dd;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 230.8%;
+    right: 0px;
+    width: 50%;
+    height: 500px;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+table { border: 1px solid green;
+    width: 100%;
+    border-spacing: 0.8; 
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+td, th { padding: 5px; 
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} 
+caption { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-size: 1.6em;
+       font-weight: bold; 
+       padding-bottom: 20px;}
+tr:nth-of-type(even){ 
+    background-color:#086444;
+    color: white;
+} 
+tr:nth-of-type(even):hover{
+    background-color: orange;
+}
+tr:nth-of-type(odd):hover{
+    background-color: greenyellow;
+}
+tr:first-of-type { 
+    background-color:darkmagenta; 
+               color: #eaeaea; 
+}
+.fifthsection {
+    display: flex;
+    flex-direction: row;
+    background-color:#F9F0D3; /* Apply the background color to the entire section */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: darkorchid;
+}
+.fifthsection:hover{
+    font-size: 18px;
+    color: darkorchid;
+}
+ .end{
+    text-align: center;
+    font-size: large;
+    color: white;
+    background-color: #db765c;
+    font-size: 16px;
+    font-weight: bold;
+ }
+ footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+ }
+ footer p,u,a{
+    margin: 3px;
+ }
+ @media (max-width: 1080px) {
+    .navbar {
+        flex-direction: column; /* Navbar becomes vertical */
+        width: 100%; /* Adjust height as needed */
+        height: auto;
+    }
+    .navbar a {
+        margin: 2px 0; /* Add spacing between navbar links */
+    }
+    .secondsection,
+    .thirdsection,
+    .fifthsection {
+        flex-direction:column; /* Elements stack vertically on smaller screens */
+    }
+    .textdiv,
+    .textdiv1,
+    .textdiv2 {
+        width: 100%; /* Textdivs take full width on mobile */
+        height: auto; /* Adjust height as needed */
+        margin-bottom: 20px; /* Add spacing between textdivs */
+    }
+}
+/* Desktop styles */
+@media (min-width: 1081px) {
+    .navbar {
+        height: 80px; /* Restore the original height for desktop */
+    }
+    .secondsection,
+    .thirdsection,
+    .fifthsection {
+        display: flex; /* Restore flex display for desktop */
+    }
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="registration.html">REGISTRATION</a>
+        <a href="order.html">ORDER</a>
+        <img class="logo" src="C:\Users\faraz\OneDrive\Desktop\wd-assign2\images\logob.png">
+    </div>
+    <section class="secondsection">
+        <div> <img src="https://w0.peakpx.com/wallpaper/729/832/HD-wallpaper-colours-ice-cream-food-colourful.jpg"></div>
+        <div class="textdiv"><p class="text"><h2><b>Ice cream enthusiasts, come together!</b></h2>
+            Indulge in your passion for ice cream with Sweet Life® Rewards and begin earning your favorite treats for free.*</p></div>
+    </section>
+
+    <section class="thirdsection">
+      <div class="textdiv1"><p class="text"><h2><b>Icecream friends forever</b></h2>
+         Treat your bestie to something good in celebration of National Icecream Day.*</p></div>
+          <div> <img src="https://media.istockphoto.com/id/1065498446/photo/friends-sharing-ice-cream-cones-in-downtown-la.jpg?s=612x612&w=0&k=20&c=5KnXBZhlvbxnFdQpqwm4ydx42vEOtbuCbiCMzy_O3XA="></div>
+  </section>
+
+    <table>
+        <caption>Our Exciting Icecream Flavors</caption>
+        <tr>
+          <th>Icecream Flavors</th>
+          <th>Description</th>
+          <th>Price</th>
+       </tr>
+       <tr>
+          <td>Vanilla Icecream</td>
+          <td>Vanilla ice cream is a timeless and creamy dessert with a rich, comforting flavor.</td>
+          <td>$10</td>
+       </tr>
+       <tr>
+          <td>Chocolate Icecream</td>
+          <td>Chocolate ice cream is a decadent treat known for its rich, indulgent flavor.</td>
+          <td>$5</td>
+       </tr>	 
+       <tr>
+          <td>Sundae</td>
+          <td>A delightful dessert consisting of ice cream, toppings, and sauces, often served in a tempting and colorful presentation.</td>
+          <td>$11</td>
+       </tr>
+          <tr>
+          <td>Chocolate Peanut Butter</td>
+          <td>Chocolate peanut butter ice cream is a heavenly blend of rich chocolate and creamy peanut butter flavors, offering a perfect balance of sweet and nutty indulgence.</td>
+          <td>$9</td>
+       </tr>
+        <tr>
+          <td>Sweet Life Special</td>
+          <td>A mixed drink, typically enjoyed as a delightful and refreshing beverage.</td>
+          <td>$12</td>
+       </tr>
+       <tr>
+        <td>PinaColada</td>
+        <td>A Piña Colada is a tropical cocktail known for its creamy, coconut and pineapple-infused flavor, making it a perfect sip of paradise.</td>
+        <td>$9</td>
+     </tr>
+     <tr>
+        <td>Cookie Dough</td>
+        <td>Cookie dough ice cream is a delightful frozen treat featuring creamy vanilla ice cream studded with chunks of raw cookie dough, providing a sweet and satisfying combination of flavors and textures.</td>
+        <td>$2</td>
+     </tr>
+     <tr>
+        <td>Butter Pecan</td>
+        <td>Butter pecan ice cream is a classic dessert featuring creamy, buttery ice cream with toasted pecan pieces, offering a rich and nutty flavor experience.</td>
+        <td>$5</td>
+     </tr>
+     <tr>
+        <td>Sweet Caramel</td>
+        <td>Caramel ice cream is a luscious dessert infused with sweet, golden caramel swirls, creating a rich and indulgent treat.</td>
+        <td>$6</td>
+     </tr>
+     </table>
+
+     <section class="forthsection">
+      <div> <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/10/06152543/Untitled-design.jpg"></div>
+      <div class="textdiv2"><p class="text"><h2><b>Signature Cakes</b></h2>
+         A delectable indulgence that leaves a lasting impression."*</p></div>
+   </section>
+
+   <table>
+   <caption>Our Exciting Cake Flavors</caption>
+        <tr>
+          <th>Cakes</th>
+          <th>Description</th>
+          <th>Price</th>
+       </tr>
+       <tr>
+          <td>Apple Pie</td>
+          <td>A timeless American classic, evokes warm, comforting memories.</td>
+          <td>$10</td>
+       </tr>
+       <tr>
+          <td>Funfetti</td>
+          <td>Joyful explosion of colorful sprinkles in every bite."</td>
+          <td>$18</td>
+       </tr>	 
+       <tr>
+          <td>Lemon Raspberry</td>
+          <td>A delightful blend of tangy citrus and sweet berries.</td>
+          <td>$25</td>
+       </tr>
+          <tr>
+          <td>Strawberry Cheesecake</td>
+          <td>A heavenly dessert that marries creamy indulgence with fruity delight.</td>
+          <td>$6</td>
+       </tr>
+       <tr>
+         <td>Carrot Cake (nut-free)</td>
+         <td>A delicious treat for those with allergies, offering all the flavors of a classic.</td>
+         <td>$15</td>
+      </tr>
+       </table>
+
+       <section class="fifthsection">
+         <p>In the heart of our quaint town stood Sweet Life Ice Cream, a cherished
+            haven for frozen delights. It welcomed patrons with a kaleidoscope of flavors. From lavender honey 
+            swirls to nostalgic root beer floats, each scoop held a story, making every 
+            visit a delightful journey into a sweeter, more magical world."</p>
+       </section>
+       <hr>
+       <footer>
+         <p><u>Our Location:</u>  Sweet Life Icecream Parlor 
+            123 Sugar Lane
+            Frostville, Sundae County
+            Treatsville, ICY 4567
+            United States</p>
+            <a href="https://www.starbucks.com/">www.sweetlife.com</a>
+            <hr>
+            <p class="end">Sweet Life ℗</p>
+       </footer>
+</body>
+</html>
