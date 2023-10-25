@@ -1,521 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Order Page Sweet Life</title>
+<title>Bringing Joy to Your Doorstep: Order Here</title>
 <meta charset="utf-8">
-<meta name="description" content="Web development">
-<meta name="keywords" content="HTML, CSS, JavaScript">
-<meta name="author" content="your name">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url("https://img.freepik.com/free-photo/marbled-blue-abstract-background-liquid-marble-pattern_1258-90996.jpg");
-    background-color: none;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
-img{
-    width: 675px;
-    height: 500px;
-}
-.logo{
-    width: 80px;
-    height: 80px;
-    margin-left: 200px;
-}
-.navbar {
-    background-color: darkpink;
-    overflow: hidden;
-    display: inline-flex;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    height: 80px;
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-    overflow: hidden;
-    background-color: #db765c;
-}
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px;
-    margin-left: 50px;
-    margin-top: 30px;
-    text-decoration: none;
-    font-size:large;
-}
-.navbar a:hover {
-    text-decoration: underline #086444;
-    border-radius: 5px;
-    height: fit-content;
-}
-span{
-    color: darkred;
-    font-weight: bold;
-}
-.container {
-    width: 100%;
-    max-width: 1000px; 
-    margin: 0 auto; 
-    overflow: hidden; 
-  }
-  table {
-    width: 50%;
-    height: 50%;
-    float: left;
-    text-align: center;
-  }
-  table,tr,td{
-    margin-top: 50px;
-    border: 2px solid black;
-    background-color: #57d9d0;
-    padding:24px ;
-    border: 1px black;
-    border-style: dotted;
-  }
-  #order-form {
-    margin-top: 50px;
-    width: 50%;
-    height: 50%;
-    background-color: #dd519d;
-    float: left;
-    border: 5px black;
-    border-style: dashed;
-    box-sizing: border-box; 
-    padding: 20px; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-  }
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="radio"],
-  input[type="text"],
-  textarea {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .button{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #086444;
-    color: white;
-    width: 100px;
-    height: 50px;
-    position: relative;
-    left: 38%;
-    font-size: large;
-    border-radius: 30px;
-}
-.button:hover{
-    background-color: aquamarine;
-    color: black;
-}
-td:nth-of-type(even){ 
-    background-color:pink;
-    color:black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-td:nth-of-type(odd){ 
-    background-color:pink;
-    color:black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-td:nth-of-type(even):hover{
-    background-color: orange;
-}
-td:nth-of-type(odd):hover{
-    background-color: yellow;
-    color: black;
-}
-h1{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-.end{
-  text-align: center;
-  font-size: large;
-  color: white;
-  background-color: #db765c;
-  font-size: 16px;
-  font-weight: bold;
-}
-</style>
+<meta name="description" content="Order our best ice creams and cakes online or you can also pick it up yourself, continue with your account or as a guest user, you are still welcomed warm-heartedly">
+<meta name="keywords" content="ice cream, artisan, flavors, menu, Willowbrook, Sweet Scoops, order, take away, delivery, cakes, awesomeness">
+<meta name="author" content="Lara Bianco">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">HOME</a>
-        <a href="registration.html">REGISTRATION</a>
-        <a href="order.html">ORDER</a>
-        <img class="logo" src="C:\Users\faraz\OneDrive\Desktop\wd-assign2\images\logob.png">
+<header>
+  <nav id="mobile-nav">
+    <a id="mobile-menu">&#9776;</a>
+    <div id="sub-mobile-menu">
+      <ul>
+        <li><a id="close-sub-menu">Close Menu</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="registration.html">REGISTRATION</a></li>
+        <li><a href="order.html" class="active">ORDER</a></li>
+        <li><a href="features.html">FEATURES</a></li>
+      </ul> 
     </div>
-    <div class="container>">
-    <table width="40%" id="alignment" > 
-        <tr>  
-        <th>Item</th> 
-        <th>-</th>
-        <th>Price(Rs.)</th>
-        </tr> 
-        <tr>
-        <td>Vanilla Icecream</td> 
-        <td> ~ </td>
-        <td>$10</td> 
-        </tr> 
-        <tr>
-        <td>Chocolate Icecream</td>
-        <td> ~ </td> 
-        <td>$5</td> 
-        </tr>
-        <tr> 
-        <td>Sundae</td>
-        <td> ~ </td>  
-        <td>$11</td>
-        </tr> 
-        <tr>  
-        <td>Chocolate Peanut Butter</td>
-        <td> ~ </td> 
-        <td>$9</td> 
-        </tr>  
-        <tr>
-        <td>Sweet Life Special</td>
-        <td> ~ </td> 
-        <td>$12</td>
-        </tr>
-        <tr>  
-        <td>PinaColada</td>
-        <td> ~ </td> 
-        <td>$9</td> 
-        </tr> 
-        <tr>  
-        <td>Cookie Dough</td>
-        <td> ~ </td> 
-        <td>$2</td> 
-        </tr> 
-        <tr>  
-        <td>Butter Pecan</td>
-        <td> ~ </td> 
-        <td>$5</td> 
-        </tr> 
-        <tr>  
-        <td>Apple Pie</td>
-        <td> ~ </td> 
-        <td>$10</td> 
-        </tr>
-        <tr>  
-        <td>Funfetti</td>
-        <td> ~ </td> 
-        <td>$18</td> 
-        </tr>
-        <tr>  
-        <td>Lemon Raspberry</td>
-        <td> ~ </td> 
-        <td>$25</td> 
-        </tr>
-        <tr>  
-        <td>Strawberry Cheesecake</td>
-        <td> ~ </td> 
-        <td>$6</td> 
-        </tr>
-        <tr>  
-        <td>Carrot Cake (nut-free)</td>
-        <td> ~ </td> 
-        <td>$15</td> 
-        </tr>   
-        </table>
-
-        <form id="order-form">
-            <h1>Sweet Life - Order Form</h1>
-            <label for="full-name"><u>Full Name</u> *</label>
-            <input type="text" id="full-name" name="full-name"><br>
-            <span id="name-error" class="error"></span><br>
-        
-            <label for="email"><u>Email</u> *</label>
-            <input type="email" id="email" name="email"><br>
-            <span id="email-error" class="error"></span><br>
-        
-            <label><u>Delivery</u></label>
-            <input type="radio" name="delivery-type" value="delivery" id="delivery-radio">
-            <label for="delivery-radio">Delivery</label>
-            <input type="radio" name="delivery-type" value="pickup" id="pickup-radio">
-            <label for="pickup-radio">Pickup</label><br>
-        
-            <div id="delivery-address" style="display: none;">
-              <label for="delivery-address-input"><u>Delivery Address</u></label>
-              <input type="text" id="delivery-address-input" name="delivery-address"><br>
-            </div>
-        
-            <label for="phone"><u>Phone Number</u> *</label>
-            <input type="tel" id="phone" name="phone"><br>
-            <span id="phone-error" class="error"></span><br>
-        
-            <label for="post"><u>Code</u> *</label>
-            <input type="text" id="post" name="post"><br>
-            <span id="post-error" class="error"></span><br>
-        
-            <label for="receipt-email"><u>Email For Receipt</u> *</label>
-            <input type="email" id="receipt-email" name="receipt-email"><br>
-            <span id="email-receipt-error" class="error"></span><br>
-        
-            <label><u>Payment</u></label>
-            <input type="radio" name="payment-type" value="pay-on-pickup" id="pay-on-pickup-radio">
-            <label for="pay-on-pickup-radio">Pay On Pickup</label>
-            <input type="radio" name="payment-type" value="pay-online" id="pay-online-radio">
-            <label for="pay-online-radio">Pay Online</label><br>
-        
-            <div id="credit-card-info" style="display: none;">
-              <label for="credit-card-type"><u>Choose Card Type:</u></label>
-              <select id="credit-card-type" name="credit-card-type">
-                <option value="visa">Visa</option>
-                <option value="mastercard">MasterCard</option>
-                <option value="amex">American Express</option>
-              </select><br>
-            
-              <label for="credit-card-number"><u>Enter Card Number:</u></label>
-              <input type="text" id="credit-card-number" name="credit-card-number" maxlength="16"><br>
-            </div>
-            
-            <br>
-            <textarea required>Write your order here...</textarea><br>
-            <input class="button" type="submit" value="SUBMIT">
-          </form>
+  </nav>
+  <img class="logo" src="images/sweet_life_logo.png" alt="sweet life logo">
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="registration.html">REGISTRATION</a></li>
+      <li><a href="order.html" class="active">ORDER</a></li>
+      <li><a href="features.html">FEATURES</a></li>
+    </ul>        
+  </nav>
+</header>
+<main id="MAIN">
+  <section id="main-catalogue">
+    <div id="subnav">
+      <a id="icecream" onclick="showIceCatalogue()">ICE CREAM</a>
+      <a id="cake" onclick="showCakeCatalogue()">CAKE</a>
+      <a id="profile">Profile</a>
+      <a id="my-cart" onclick="showCart()">My Cart (<span class="cart-items">0</span> items)</a>
     </div>
-            <br>
+    <section id="my-cart-container">
+      <button onclick="hideCart()" id="closebtn">&times;</button>
+      <h2>Your Cart (<span class="cart-items">0</span> items)</h2>
+      <table id="cartTable">
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Sub Total</th>
+        </tr>
+      </table>
+      <div id="total">Total: $0.00</div>
+      <div id="cart-options">
+        <div><button onclick="hideCart()">Continue Shopping</button></div>
+        <div><button onclick="openCheckout()">Proceed to Checkout</button></div>
+      </div>    
+    </section>
+    <section class="catalogue" id="ice-catalogue">
+      <article class="catalogue-container">
+        <div>
+          <img src="images/vanilla.png" alt="vanilla icecream">
+          <div class="inner-box">
+            <p>Vanilla</p>
+            <a onclick="addToCart('Vanilla Ice cream', 8)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/choc.png" alt="chocolate icecream">
+          <div class="inner-box">
+            <p>Chocolate</p>
+            <a onclick="addToCart('Chocolate Ice cream', 8)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/chocpeanut.png" alt="chocolate peanut butter icecream">
+          <div class="inner-box">
+            <p>Choc Peanut Butter</p>
+            <a onclick="addToCart('Chocolate Peanut Butter', 10)">Add to cart</a>
+          </div>
+        </div>
+      </article>
+      <article class="catalogue-container">
+        <div>
+          <img src="images/caramel.png" alt="caramel icecream">
+          <div class="inner-box">
+            <p>Sweet Caramel</p>
+            <a onclick="addToCart('Sweet Caramel', 10)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/strawberry.png" alt="strawberry icecream">
+          <div class="inner-box">
+            <p>Strawberry</p>
+            <a onclick="addToCart('Strawberry Ice cream', 7)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/caramelchoc.png" alt="caramel chocolate icecream">
+          <div class="inner-box">
+            <p>Caramel Choc</p>
+            <a onclick="addToCart('Caramel Chocolate Ice cream', 10)">Add to cart</a>
+          </div>
+        </div>
+      </article>
+      <article class="catalogue-container">
+        <div>
+          <img src="images/oreo.png" alt="oreo icecream">
+          <div class="inner-box">
+            <p>Oreo Cookie</p>
+            <a onclick="addToCart('Oreo Cookie Ice cream', 13)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/sweetspecial.png" alt="sweet life special icecream">
+          <div class="inner-box">
+            <p>Sweet Life Special</p>
+            <a onclick="addToCart('Sweet Life Special', 15)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/supreme.png" alt="sweet life supreme icecream">
+          <div class="inner-box">
+            <p>Sweet Life Supreme</p>
+            <a onclick="addToCart('Sweet Life Supreme', 16)">Add to cart</a>
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <p class="end">Sweet Life ℗</p>        
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-        const deliveryRadio = document.getElementById('delivery-radio');
-        const pickupRadio = document.getElementById('pickup-radio');
-        const deliveryAddress = document.getElementById('delivery-address');
-        const creditCardInfo = document.getElementById('credit-card-info');
-        const payOnPickupRadio = document.getElementById('pay-on-pickup-radio');
-        const payOnlineRadio = document.getElementById('pay-online-radio');
+    <section class="catalogue" id="cake-catalogue">
+      <article class="catalogue-container">
+        <div>
+          <img src="images/applepie.png" alt="apple pie">
+          <div class="inner-box">
+            <p>Apple Pie</p>
+            <a onclick="addToCart('Apple Pie - Cake', 15)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/funfetti.png" alt="funfetti">
+          <div class="inner-box">
+            <p>Funfetti</p>
+            <a onclick="addToCart('Funfetti - Cake', 20)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/lemoncake.png" alt="lemon raspberry">
+          <div class="inner-box">
+            <p>Lemon Raspberry</p>
+            <a onclick="addToCart('Lemon Raspberry - Cake', 20)">Add to cart</a>
+          </div>
+        </div>
+      </article>
+      <article class="catalogue-container">
+        <div>
+          <img src="images/strawberrycheesecake.png" alt="strawberry cheese"> 
+          <div class="inner-box">
+            <p>Strawberry Cheesecake</p>
+            <a onclick="addToCart('Strawberry Cheesecake', 20)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/carrotcake.png" alt="carrot cake nut free">
+          <div class="inner-box">
+            <p>Carrot Cake (Nut Free)</p>
+            <a onclick="addToCart('Carrot Cake (Nut Free)', 22)">Add to cart</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/choccake.png" alt="chocolate cake">
+          <div class="inner-box">
+            <p>Double Shot Choc</p>
+            <a onclick="addToCart('Double Shot Choc', 18)">Add to cart</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </section>
 
+  <div id="login-container">
+    <form id="login-form" method="" action="">
+      <div id="login-form-title">
+        <h1>Login</h1>
+      </div>
+      <label for="uname">User Name</label><input id="uname" name="Username" type="text">
+      <label for="pwd">Password</label><input id="pwd" name="Password" type="text">
+      <input id="login" type="submit" value="Login">
+      <p>Not a member? <a href="registration.html">Signup Now</a></p>
+      <p id="OR">&nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;</p>
+      <p>Continue As <a id="guest" onclick="showCatalogue()">Guest</a></p>
+    </form>
+  </div>
+</main>
+
+  <section id="checkout">
+    <div id="inner-checkout">
+
+      <h1>Checkout</h1>
+
+      <form method="post" id="checkout-form" action=" http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+        <div id="del-or-pick-btns">
+          <a class="del-or-pick">Delivery</a>
+          <a class="del-or-pick">Pickup</a>
+        </div>
+
+        <div id="pick-up-options">
+          <a class="paybtns">Pay Online</a>
+          <a class="paybtns">Pay Later</a>
+        </div>
+
+        <div id="name-container">
+          <label class="headings" for="forReceipt">Name</label>
+          <input id="forReceipt" type="text" name="Customer Name" placeholder="Enter Name">
+        </div>
+        <div id="email-container">
+          <label class="headings" for="email-for-online-payment">Email</label>
+          <input id="email-for-online-payment" name="Email" type="email" placeholder="Enter email">
+        </div>
+
+        <fieldset id="del-address">
+          <legend for="del-address" class="headings">Delivery Address</legend>
+          <label for="dstreetname">Street</label>
+          <input id="dstreetname" name="Street" class="field-to-copy" type="text" placeholder="Street">
+          <label for="dstate">State</label>
+          <input id="dstate" name="State" class="field-to-copy" type="text" placeholder="State">
+          <label for="dcountry">Country</label>
+          <input id="dcountry" name="Country" class="field-to-copy" type="text" placeholder="Country">
+          <label for="dpostcode">Postal Code</label>
+          <input id="dpostcode" name="Postal Code" class="field-to-copy" type="text" placeholder="Postal Code" maxlength="4">
+          <span id="if-all-fields"></span>
+        </fieldset>
+
+        <input id="fill-address" class="sameAsDelAddress" name="Same As Delivery Address" type="checkbox" onclick="fillAddress()">
+        <label for="fill-address" class="sameAsDelAddress">Same as Delivery Address</label>
         
-        deliveryRadio.addEventListener('change', function () {
-            if (this.checked) {
-                deliveryAddress.style.display = 'block';
-            } else {
-                deliveryAddress.style.display = 'none';
-            }
-        });
+        <fieldset id="bill-address">
+          <legend for="bill-address" class="headings">Billing Address</legend>
+          <label for="bstreetname">Street</label>
+          <input id="bstreetname" name="Billing Street" class="field-to-fill" type="text" placeholder="Street">
+          <label for="bstate">State</label>
+          <input id="bstate" name="Billing State" class="field-to-fill" type="text" placeholder="State">
+          <label for="bcountry">Country</label>
+          <input id="bcountry" name="Billing Country" class="field-to-fill" type="text" placeholder="Country">
+          <label for="bpostcode">Postal Code</label>
+          <input id="bpostcode" name="Billing Postal Code" class="field-to-fill" type="text" placeholder="Postal Code" maxlength="4">
+        </fieldset>        
 
-        // Show/hide credit card info based on the selected payment option
-        payOnlineRadio.addEventListener('change', function () {
-            if (this.checked) {
-                creditCardInfo.style.display = 'block';
-            } else {
-                creditCardInfo.style.display = 'none';
-            }
-        });
+        <fieldset id="payment-method">
+          <legend for="payment-method" class="headings">Payment Method</legend>
+    
+          <div id="form-radios">
+            <div class="form-radio">
+              <img id="visa-logo" src="images/visa.jpg" alt="visa logo">
+              <label for="visa">Visa Payment</label>
+              <input id="visa" name="payment-method" type="radio" onchange="updateCardLength('16')">
+            </div>
+    
+            <div class="form-radio">
+              <img id="american-express-logo" src="images/American-Express.jpg" alt="american express logo">
+              <label for="americanExpress">American Express</label>
+              <input id="americanExpress" name="payment-method" type="radio" onchange="updateCardLength('15')">
+            </div>
+    
+            <div class="form-radio">
+              <img id="mastercard-logo" src="images/mastercard.jpg" alt="mastercard logo">
+              <label for="mastercard">Master Card</label>
+              <input id="mastercard" name="payment-method" type="radio" onchange="updateCardLength('16')">
+            </div>
+          </div>
+        </fieldset>
 
-        // Hide delivery address and credit card info when Pickup or Pay On Pickup is selected
-        pickupRadio.addEventListener('change', function () {
-            deliveryAddress.style.display = 'none';
-            creditCardInfo.style.display = 'none';
-        });
+        <fieldset id="card-details">
+          <legend for="card-details" class="headings">Payment Details</legend>
+          <label for="cardholdername">Card Holder Name</label>
+          <input id="cardholdername" name="CardHolder Name" class="card-details" type="text" placeholder="Cardholder Name">
+          <label for="cardnum">Card Number</label>
+          <input id="cardnum" name="Card Number"     class="card-details" type="text" placeholder="Card Number">
+          <label for="cardexp">Card Expiration Date</label>
+          <input id="cardexp" name="Card Exp Date"   class="card-details" type="text" placeholder="MM/YY" maxlength="5">
+          <label for="cvccode">Security Code</label>
+          <input id="cvccode" name="Security Code"   class="card-details" type="text" placeholder="CVC/CCV" maxlength="3">
+        </fieldset>
 
-        payOnPickupRadio.addEventListener('change', function () {
-            creditCardInfo.style.display = 'none';
-        });
-
-        // Initial state based on default selected options
-        if (deliveryRadio.checked) {
-            deliveryAddress.style.display = 'block';
-        }
-
-        if (payOnlineRadio.checked) {
-            creditCardInfo.style.display = 'block';
-        }
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var form = document.getElementById('order-form');
-      form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission for now
-    
-        var fullName = document.getElementById('full-name').value;
-        var email = document.getElementById('email').value;
-        var phone = document.getElementById('phone').value;
-        var post = document.getElementById('post').value;
-        var receiptEmail = document.getElementById('receipt-email').value;
-    
-        // Reset error messages
-        resetErrors();
-    
-        var hasErrors = false;
-    
-        // Check full name
-        if (fullName.trim() === '') {
-          setError('name-error', 'Please enter your full name.');
-          hasErrors = true;
-        }
-    
-        // Check email
-        if (email.trim() === '' || !isValidEmail(email)) {
-          setError('email-error', 'Please enter a valid email address.');
-          hasErrors = true;
-        }
-    
-        // Check phone number
-        if (phone.trim() === '') {
-          setError('phone-error', 'Please enter your phone number.');
-          hasErrors = true;
-        }
-    
-        // Check post code
-        if (post.trim() === '' || !isValidPostCode(post)) {
-          setError('post-error', 'Post code should be exactly 4 digits.');
-          hasErrors = true;
-        }
-    
-        // Check email for receipt
-        if (receiptEmail.trim() === '' || !isValidEmail(receiptEmail)) {
-          setError('email-receipt-error', 'Please enter a valid email address for receipt.');
-          hasErrors = true;
-        }
-    
-        // Check delivery type
-        var deliveryType = document.querySelector('input[name="delivery-type"]:checked');
-        if (!deliveryType) {
-          alert('Please select a delivery type (Delivery or Pickup).');
-          hasErrors = true;
-        } else if (deliveryType.value === 'delivery') {
-          // Check delivery address if "Delivery" is selected
-          var deliveryAddress = document.getElementById('delivery-address-input').value;
-          if (deliveryAddress.trim() === '') {
-            alert('Please enter a delivery address to proceed.');
-            hasErrors = true;
-          }
-        }
-    
-        // Check payment type
-        var paymentType = document.querySelector('input[name="payment-type"]:checked');
-        if (!paymentType) {
-          alert('Please select a payment type (Pay On Pickup or Pay Online).');
-          hasErrors = true;
-        } else if (paymentType.value === 'pay-online') {
-          // Check credit card info if "Pay Online" is selected
-          var creditCard = document.getElementById('credit-card').value;
-          if (creditCard.trim() === '') {
-            alert('Please enter credit card details to proceed.');
-            hasErrors = true;
-          }
-        }
-    
-        if (!hasErrors) {
-          // Form is valid, proceed with submission
-          alert('Your order has been placed.');
-          form.reset();
-        }
-      });
-    
-      // Function to reset error messages
-      function resetErrors() {
-        var errorElements = document.getElementsByClassName('error');
-        for (var i = 0; i < errorElements.length; i++) {
-          errorElements[i].textContent = '';
-        }
-      }
-    
-      // Function to set an error message
-      function setError(id, message) {
-        var errorElement = document.getElementById(id);
-        if (errorElement) {
-          errorElement.textContent = message;
-        }
-      }
-    
-      // Function to validate email format
-      function isValidEmail(email) {
-        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-      }
-    
-      // Function to validate post code format
-      function isValidPostCode(post) {
-        let postCodeRegex = /^\d{4}$/;
-        return postCodeRegex.test(post);
-      }
-    });
-    // Get references to the select and input elements
-    let cardTypeSelect = document.getElementById("credit-card-type");
-    let cardNumberInput = document.getElementById("credit-card-number");
-    
-    // Add an event listener to the select element
-    cardTypeSelect.addEventListener("change", function() {
-      // Get the selected card type
-      let selectedCardType = cardTypeSelect.value;
-    
-      // Update the maxlength attribute of the input field based on the selected card type
-      if (selectedCardType === "visa" || selectedCardType === "mastercard") {
-        cardNumberInput.setAttribute("maxlength", "16");
-      } else if (selectedCardType === "amex") {
-        cardNumberInput.setAttribute("maxlength", "15");
-      } else {
-        // Default to a common maxlength (e.g., 16) if none of the known types are selected
-        cardNumberInput.setAttribute("maxlength", "16");
-      }
-    
-      // Clear any previous error message
-      clearError();
-    });
-    
-    // Add an event listener to the input field to validate the length
-    cardNumberInput.addEventListener("input", function() {
-      let selectedCardType = cardTypeSelect.value;
-      let maxLength = cardNumberInput.getAttribute("maxlength");
-      let enteredValue = cardNumberInput.value;
-    
-      // Remove any non-numeric characters
-      enteredValue = enteredValue.replace(/[^0-9]/g, "");
-    
-      // Check if the entered value exceeds the allowed length
-      if (enteredValue.length > maxLength) {
-        showError("Card number should have a maximum of " + maxLength + " digits.");
-        cardNumberInput.value = enteredValue.substring(0, maxLength); // Truncate the input
-      } else {
-        clearError();
-      }
-    });
-    
-    // Function to display an error message
-    function showError(message) {
-      let errorElement = document.getElementById("error-message");
-      if (!errorElement) {
-        errorElement = document.createElement("div");
-        errorElement.id = "error-message";
-        errorElement.style.color = "red";
-        cardNumberInput.parentNode.appendChild(errorElement);
-      }
-      errorElement.textContent = message;
-    }
-    
-    // Function to clear the error message
-    function clearError() {
-      let errorElement = document.getElementById("error-message");
-      if (errorElement) {
-        errorElement.parentNode.removeChild(errorElement);
-      }
-    }
-</script>        
+        <div id="bill">
+          <h2 class="headings">Shopping Bill</h2>
+          <table>
+              <tr>
+                <th>Shipping fee</th>
+                <td id="shipping-fee">$5.00</td>
+              </tr>
+              <tr>
+                <th>Price Total</th>
+                <td id="price-total"></td>
+              </tr>
+              <tr>
+                <th>Tax Inclusive.</th>
+                <td id="tax"></td>
+              </tr>
+              <tr id="total-row">
+                <th>Total</th>
+                <td id="grand-total"></td>
+              </tr>
+          </table>
+        </div>
+        <input id="buy-btn" type="submit" value="Buy Now">
+      </form>
+    </div>
+  </section>
+<footer>
+  <p>Copyright © 2023. Sweet Life Australia. All Rights Reserved.</p>
+</footer>
 </body>
 </html>

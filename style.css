@@ -1,0 +1,1951 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/*--------------------------------------------------------------------------Header CSS--------------------------------------------------------------------------*/
+body, main, html, header, #catalogue-main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+a{
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid #504357;
+    z-index: 2;
+    height: fit-content;
+}
+.logo{
+    width: 5%;
+    padding: 5px 0 5px 35px;
+    margin: 0;
+    float: left;
+}
+#mobile-nav{
+    display: none;
+}
+nav {
+    width: 43%;
+    display: inline;
+    list-style-type: none;
+    position: relative;
+    left: 26.5%;
+    right: 26.5%;  
+    margin: 0;
+    padding: 0;
+}
+.navbar ul{
+    list-style-type: none;
+    margin:0;
+}
+.navbar li {
+    float: left; 
+    padding: 2.5% 2% 2% 2%;
+    margin: 0;
+}
+  
+.navbar a {
+    display: block;
+    color: rgb(65, 0, 65);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+}
+.navbar a:hover{
+    color: #aa422e;
+}
+.navbar li:is(:has(a.active)) {
+    color: #aa422e;
+    position: relative;
+}
+
+.navbar li:is(:has(a.active))::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60%;
+    height: 0.3em;
+    background-color: #aa422e;
+    transform: translateX(-50%);
+}
+
+.navbar a.active {
+    color: #aa422e;
+}
+/*--------------------------------------------------------------------------Main CSS--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------Section 1--------------------------------------------------------------------------*/
+section {
+    width: 100%;
+}
+
+article {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+main p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#first-section{
+    margin-top: 2%;
+    background-image: url('icecreams.jpg');
+    background-size: cover; /* This will make sure the image covers the entire element */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center center;
+    height: 100vh;
+}
+#first-section-div-2{
+    background-color: #826d8c;
+    padding: 2%;
+    border-radius: 25px;
+    width: 42%;
+    position: relative;
+    left: 50%;
+    right: 8%;
+    top: 32%;
+}
+#first-section h1{
+    font-size: 33pt;
+    color: #fff;
+    font-family: 'Gabarito', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+#first-section p{
+    color: #fff;
+    font-size: 12.5pt;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*------------------------------------------------------------------Popular Ice creams-----------------------------------------------------------------*/
+#popular-item-container{
+    border-bottom: 2px solid gray;
+}
+#top-3-ice-creams{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    margin: 3% 0 5% 0;
+}
+
+#top-3-ice-creams div{
+    flex: 1;
+    box-sizing: border-box;
+}
+#top-3-ice-creams img{
+    width: 85%;
+    position: relative;
+    left: 7.5%;
+    right: 7.5%;
+}
+#top-3-ice-creams p:nth-child(odd) {
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 11.5pt;
+}
+#top-3-ice-creams p:nth-child(even) {
+    text-align: center;
+    font-weight: 800;
+    font-size: 16pt;
+}
+#popular-item-container h2{
+    text-align: center;
+    padding: 5% 0 0 0;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 24pt;
+}
+#popular-item-container h3{
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 16pt;
+}
+/*------------------------------------------------------------------Ice-Cream-Menu----------------------------------------------------------------*/
+#ice-cream-menu{
+    display: block;
+}
+#ice-cream-menu table{
+    font-size: 12pt;
+    margin: 30px 0 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+}
+#ice-cream-menu th, td{
+    padding: 5px;
+    text-align: left;
+    font-weight: 400;
+}
+/* Apply alternating colors to odd rows */
+#ice-cream-menu tr{
+    border-bottom: 2px solid rgb(255, 225, 230);
+}
+#ice-cream-menu h2{
+    font-size: 24pt;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 800;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+/*---------------------------------------------------------------------Cake Menu------------------------------------------------------------------*/
+#cake-menu{
+    margin: 5% 0 5% 0;
+    gap: 3%;
+}
+#cake-menu div{
+    flex: 1;
+}
+#cake-menu h2{
+    font-family: 'Gabarito', sans-serif;
+    font-size: 24pt;
+    text-align: center;
+}
+#cake-menu p{
+    text-align: center;
+}
+#cake-menu img{
+    width: 100%;
+}
+#cake-menu table{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14pt;
+    margin: 0;
+}
+/*--------------------------------------------------------------------------Details-Section-------------------------------------------------------------------------*/
+#details {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 45vh;
+    background-color: #202020;
+    color: white;
+    font-size: 11pt;
+    display: flex;
+}
+#details h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+}
+#details article{
+    width: 92%;
+    position: relative;
+    left: 4%;
+    right: 4%;
+    padding: 0;
+    margin: 0;
+}
+#details div:nth-child(2){
+    padding-left: 10%;
+}
+#details ol{
+    list-style-type: none;
+    margin: 0;
+}
+
+#details div{
+    padding: 20px;
+    flex: 1; /* Distribute available space evenly among child elements */
+    box-sizing: border-box;
+}
+/*-------------------------------------------------------------------------------footer--------------------------------------------------------------------------------*/
+footer{
+    padding: 1%;
+    background-color: black;
+}
+footer p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 4%;
+    font-size: 10pt;
+    font-weight: 500;
+    color: #C0C0C0;
+}
+
+/*--------------------------------------------------------------------------Registration Page----------------------------------------------------------------------------*/
+
+#form-container{
+    position: relative;
+    margin: 8% 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+}
+#regform{
+    border: none;
+    width: 75%;
+    position: relative;
+    right: 12.5%;
+    left: 12.5%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#form-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #826d8c, lightpink);
+    width: 100%;
+}
+input[type=text],input[type=email],input[type=password]{
+    padding: 2%;
+    width: 96%;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 12pt;
+}
+label{
+    padding: 20px 0 5px 0;
+    font-size: 15px; 
+    display: block;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.half-width-div{
+    display: flex;
+    gap: 5%;
+}
+.half-div{
+    flex: 1; /* Distribute available space evenly among child elements */
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+.half-div input{
+    padding: 4%;
+    width: 92%;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 12pt;
+}
+.half-div label{
+    padding: 3px 0 3px 0;
+}
+.half-div select{
+    padding: 4%;
+    width: 100%;
+    margin: 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+.gender-div{
+    display: flex;
+    gap: 15%;
+    margin-top: 2%;
+}
+.gender-div label{
+    display: inline-block;
+}
+input[type=submit]{
+    height: 45px;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    right: 35%;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 3% 0;
+    background-color: #826d8c;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    font-weight: 700;
+}
+input[type=submit]:hover{
+    background-color: #504357;
+}
+#password-div{
+    display: flex;
+}
+#password-div label{
+    flex: 4;
+}
+#password-div span{
+    flex: 1;
+}
+#togglepassword{
+    font-size: 11pt;
+    text-align: right;
+    cursor: pointer;
+    padding: 20px 0 5px 0;
+}
+#togglepassword:hover{
+    color: navy;
+}
+/*-----------------------------------------------------------------------------Order Page-------------------------------------------------------------------------------*/
+#main-catalogue{
+    display: none;
+}
+#subnav{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    background-color: white;
+    margin: 5.3% 0 0 0;
+    padding: 29px 0 29px 0;
+}
+#subnav a{
+    font-family: 'Gabarito', sans-serif;
+    font-size: 11pt;
+    padding: 0 3% 0 0;
+    color: darkgray;
+}
+#my-cart{
+    float: right;
+    color: darkgray;
+    width: max-content;
+}
+#profile{
+    float: right;
+}
+#subnav a:hover{
+    color:black
+}
+#my-cart span{
+    display: inline;
+    padding: 0;
+}
+.catalogue{
+    margin: 0;
+    padding: 0;
+}
+.catalogue img{
+    width: 100%;
+    height: 100%;
+}
+.catalogue p{
+    padding: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+.catalogue a{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 3%;
+    margin: 0;
+    background-color: #f3aac0;
+    transition: all 0.1s linear;
+}
+.catalogue a:hover{
+    background-color: #e9658d;
+    color: white;
+}
+.catalogue-container{
+    display: flex;
+    gap: 5%;
+    margin: 0 0 7% 0;
+}
+.catalogue-container div{
+    flex: 1; /* Distribute available space evenly among child elements */
+    box-sizing: border-box;
+}
+.inner-box{
+    display: flex;
+    margin: 0;
+    padding: 5% 0 5% 0;
+}
+.inner-box p, .inner-box a{
+    flex: 1;
+    box-sizing: border-box;
+}
+#cake-catalogue{
+    display: none;
+}
+#login-container{
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Adds blur radius */
+    margin: 9% 0 0 0;
+}
+#login-form{
+    width: 30%;
+    position: relative;
+    left: 35%;
+    right: 35%;
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.7); /* Background for the content */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Shadow around login form*/
+    outline: 10px solid white; /* Adds White outline */
+    border-radius: 20px;
+    border: 15px solid white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#login-form span, #login-form p{
+    text-align: center;
+}
+#login-form a{
+    color: #523062;
+    text-decoration: none;
+}
+#OR{
+    text-align: center;
+}
+#login-form a:hover{
+    color: navy;
+}
+#login-form-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #826d8c, lightpink);
+    width: 100%;
+}
+#my-cart-container {
+    display: none;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 300;
+}
+#my-cart-container h2{
+    text-align: center;
+    padding: 3%;
+}
+#my-cart-container table{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    border-collapse: collapse;
+}
+
+#my-cart-container th, #my-cart-container td {
+    padding: 10px;
+    text-align: left;
+}
+
+#my-cart-container tr{
+    border-bottom: 1px solid #ccc;
+}
+
+#closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 15pt;
+    border: none;
+    border-radius: 2px;
+}
+#cart-options{
+    display: flex;
+    gap: 20%;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    right: 20%;
+    margin: 2% 0;
+}
+#cart-options div{
+    flex:1;
+    box-sizing: border-box;
+}
+#cart-options button{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+#cart-options button:hover{
+    background-color: #2980b9;
+}
+#cartTable button{
+    font-size: 13pt;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: white;
+}
+#cartTable input{
+    width: 32px;
+}
+#total{
+    border: 2px solid black;
+    padding: 8px 15px 8px 15px;
+    margin: 8px 0 8px 0;
+    width: 15%;
+    position: relative;
+    right: 22%;
+    left: 67%;
+    text-align: right;
+    font-size: 14pt;
+}
+/*-------------------------------------------------------Check Out Form-------------------------------------------------------------*/
+#del-or-pick-btns{
+    display: flex;
+    gap: 25px;
+}
+#pick-up-options{
+    margin: 20px 0 10px 0;
+    display: flex;
+    gap: 25px;
+}
+.del-or-pick, .paybtns{
+    flex: 1;
+    background-color: #fa5d5d;
+    color: white;
+    transition: 0.2s;
+    border-radius: 3px;
+    padding: 2%;
+    margin: 0;
+    width: 50%;
+    font-size: 13pt; 
+    border: none;
+    text-align: center;
+}
+.del-or-pick:hover, #pick-up-options a:hover{
+    background-color: #ff0000;
+}
+#checkout {
+    background-color: #fbf6f7;
+    border-radius: 20px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+    width: 375px;
+    padding: 0;
+    margin: 2% 0 2% 0;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+#checkout h1{
+    text-align: center;
+    font-size: 15pt;
+    padding: 32px 0 10px 0;
+}
+#inner-checkout{
+    width: 85%;
+    position: relative;
+    right: 7.5%;
+    left: 7.5%;
+}
+#inner-checkout label{
+    font-size: 11pt;
+    margin: 2px 0;
+    padding: 0;
+}
+#checkout .headings{
+    font-size: 12pt;
+    font-weight: 600;
+    margin: 8px 0 12px 0;
+}
+#checkout fieldset {
+    border: 0;
+    margin: 18px 0;
+    padding: 0;
+}
+#checkout legend{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#checkout input {
+    border: 0;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+}
+.form-radio {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+}
+#checkout table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#bill td {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+#bill td:nth-child(even){
+    text-align:right;
+}
+#bill #total-row{
+    border-top: 1px solid black;
+}
+#bill #total-row td, #bill #total-row th{
+    font-weight: 800;
+}
+#bill th{
+    font-weight: 500;
+    text-align: left;
+}
+#form-radios {
+    display: grid;
+    grid-gap: 1em;
+    gap: 1em;
+}
+  
+.form-radio {
+    align-items: center;
+    background-color: #fefdfe;
+    border-radius: 1em;
+    display: flex;
+    gap: 0.5em;
+    padding: 1em;
+}
+  
+.form-radio label {
+    align-items: center;
+    display: flex;
+    flex: 5;
+    padding: 12.5px 0 12.5px 0;
+}
+.form-radio img{
+    flex: 1;
+}
+
+#buy-btn {
+    background-color: #fa5d5d;
+    color: white;
+    transition: 0.3s;
+    border-radius: 25px;
+    padding: 0;
+    margin: 20px 0 20px 0;
+    width: 85%;
+    position: relative;
+    right: 7.5%;
+    left: 7.5%;
+    font-size: 12.5pt;
+    font-style: normal;
+    font-weight: 500;
+}
+#buy-btn:hover{
+    background-color: #ff0000;
+}
+#visa-logo{
+    width: 25px;
+}
+#american-express-logo{
+    width: 35px;
+}
+#mastercard-logo{
+    width: 2px;
+}
+
+.sameAsDelAddress{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    display: none;
+}
+
+#pick-up-options, #name-container, #email-container, #del-address, #bill-address, #payment-method, #card-details, #buy-btn{
+    display: none;
+}
+/*------------------------------------------------Features Page-----------------------------------------------------------*/
+#features-container{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    right: 20%;
+    margin-top: 13%;
+    height: 61.5vh;
+}
+#features-container a{
+    display: block;
+    width: 100%;
+    background-color: #f3aac0;
+    text-align: center;
+    padding: 20px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 4% 0;
+    font-size: 14pt;
+    border-radius: 5px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+}
+#features-container a:hover{
+    background-color: #e9658d;
+    color: white;
+}
+/*------------------------------------------------Media Screen for Mobile*------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+    body, main, html, header, #catalogue-main {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+    }
+    a{
+        cursor: pointer;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        border-bottom: 2px solid #504357;
+        z-index: 2;
+        height: fit-content;
+    }
+    .logo{
+        display: inline-block;
+        width: 15%;
+        position: relative;
+        left: 42.5%;
+        right: 42.5%;
+        padding: 1% 0 1% 0;
+        margin: 0;
+    }
+    #mobile-nav{
+        display: inline-block;
+        width: 20%;
+        position: relative;
+        right: 80%;
+        left: -10%;
+        padding: 5% 0 0 0;
+    }
+    #mobile-nav a{
+        font-size: 15pt;
+    }
+    #sub-mobile-menu{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+    }
+    #sub-mobile-menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #sub-mobile-menu li{
+        padding: 15px;
+        width: 100%;
+        font-family: 'Gabarito', sans-serif;
+        border-bottom: 1px solid lightgray;   
+    }
+    
+    #sub-mobile-menu a{
+        text-decoration: none;
+        width: 100%;
+        color: black;
+    }
+    #sub-mobile-menu #close-sub-menu{
+        font-family: 'Gabarito', sans-serif;
+        color: white;
+    }
+    #sub-mobile-menu li:nth-child(1){
+        padding: 15px;
+        margin: 0;
+        background-color: maroon;
+        text-align: center;
+    }
+    .navbar {
+        display: none;
+    }
+    #sub-mobile-menu a.active {
+        color: rgb(193, 85, 46);
+    }
+    /*---------------------------------------------------------Index Page (Mobile Version)----------------------------------------------*/
+    
+    /*------------------------------------------------------------Section 1-----------------------------------------------------------*/
+    section {
+        width: 100%;
+    }
+    article {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        display: block;
+    }
+    img{
+        width: 500px;
+        height: auto;
+    }
+    #first-section{
+        margin-top: 2%;
+        background-image: none;
+        height: 100vh;
+        background-color: #826d8c;
+    }
+    #first-section-div-2{
+        padding: 2%;
+        border-radius: 0;
+        width: 86%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        top: 28%;
+    }
+    #first-section h1{
+        font-size: 33pt;
+        text-align: center;
+        font-weight: 300;
+    }
+    #first-section p{
+        font-size: 14pt;
+        text-align: center;
+    }
+    /*------------------------------------------------------------------Popular Ice creams-----------------------------------------------------------------*/
+    #popular-item-container{
+        border-bottom: none;
+    }
+    #top-3-ice-creams{
+        width: 100%;
+        display: block;
+        margin: 3% 0 5% 0;
+    }
+    
+    #top-3-ice-creams div{
+        width: 90%;
+        border-bottom: 1px solid gray;
+        margin-top: 5%;
+    }
+    #top-3-ice-creams img{
+        width: 75%;
+        position: relative;
+        left: 12.5%;
+        right: 12.5%;
+    }
+    #top-3-ice-creams p:nth-child(odd) {
+        text-align: center;
+        font-size: 11.5pt;
+    }
+    #top-3-ice-creams p:nth-child(even) {
+        text-align: center;
+        font-weight: 800;
+        font-size: 16pt;
+    }
+    #popular-item-container h1{
+        text-align: center;
+        padding: 5% 0 0 0;
+        font-size: 24pt;
+    }
+    /*------------------------------------------------------------------Ice-Cream-Menu----------------------------------------------------------------*/
+    #ice-cream-menu{
+        display: block;
+    }
+    #ice-cream-menu table{
+        font-size: 12pt;
+        margin: 30px 0 30px 0;
+        border-collapse: collapse;
+    }
+    #ice-cream-menu th, td{
+        padding: 5px;
+        text-align: left;
+        font-weight: 400;
+    }
+    /* Apply alternating colors to odd rows */
+    #ice-cream-menu tr{
+        border-bottom: 2px solid rgb(255, 225, 230);
+    }
+    #ice-cream-menu h1{
+        font-size: 24pt;
+        font-weight: 800;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    /*---------------------------------------------------------------------Cake Menu------------------------------------------------------------------*/
+    #cake-menu{
+        margin: 5% 0 5% 0;
+        display: block;
+    }
+    #cake-menu h1{
+        font-size: 24pt;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    #cake-menu p{
+        text-align: center;
+    }
+    #cake-menu img{
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        margin: 0;
+        padding: 0;
+    }
+    #cake-menu table{
+        font-size: 14pt;
+        margin: 0;
+    }
+    /*--------------------------------------------------------------------------Details-Section-------------------------------------------------------------------------*/
+    #details {
+        height: max-content;
+        font-size: 11pt;
+        display: block;
+    }
+    #details h3{
+        font-size: 11pt;
+        text-align: center;
+        justify-content: center;
+    }
+    #details article{
+        width: 92%;
+        position: relative;
+        left: 4%;
+        right: 4%;
+        padding: 0;
+        margin: 0;
+    }
+    #details div{
+        padding: 20px;
+    }
+    #details div:nth-child(2){
+        padding: 20px;
+    }
+    #details ol{
+        list-style-type: none;
+        margin: 0;
+    }
+    #details p{
+        text-align: center;
+    }
+    
+    /*-----------------------------------------------------------footer---------------------------------------------------------*/
+    footer{
+        padding: 2% 0 2% 0;
+    }
+    footer p{
+        padding-left: 0;
+        font-size: 11pt;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    /*-------------------------------------------------Registration Page (Mobile Version)-------------------------------------------*/
+    
+    #form-container{
+        position: relative;
+        margin: 20% 0 5% 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+        width: 80%;
+    }
+    #regform{
+        border: none;
+        width: 90%;
+        position: relative;
+        right: 5%;
+        left: 5%;
+        margin: 0;
+        padding: 0;
+    }
+    #form-title{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 100px;
+        user-select: none;
+        border-radius: 15px 15px 0 0;
+        background: linear-gradient(-135deg, #826d8c, lightpink);
+        width: 100%;
+    }
+    input[type=text],input[type=email],input[type=password]{
+        padding: 2%;
+        width: 96%;
+        margin: 0;
+        border-radius: 10px;
+        border: 1px solid grey;
+        font-size: 12pt;
+    }
+    label{
+        padding: 20px 0 5px 0;
+        font-size: 15px; 
+        display: block;
+    }
+    .half-width-div{
+        display: flex;
+        gap: 5%;
+    }
+    .half-div{
+        flex: 1; /* Distribute available space evenly among child elements */
+        box-sizing: border-box;
+    }
+    .half-div input{
+        padding: 4%;
+        width: 92%;
+        margin: 0;
+        border-radius: 10px;
+        border: 1px solid grey;
+        font-size: 12pt;
+    }
+    .half-div select{
+        padding: 3.5% 4% 3.5% 4%;
+        width: 100%;
+        margin: 0;
+        border: 1px solid grey;
+        border-radius: 10px;
+        font-size: 12pt;
+    }
+    .gender-div{
+        display: block;
+    }
+    .gender-div label, .gender-div input{
+        display: inline-block;
+    }
+    #regform p{
+        margin-bottom: 0;
+    }
+    input[type=submit]{
+        height: 45px;
+        width: 50%;
+        position: relative;
+        left: 25%;
+        right: 25%;
+        border: none;
+        border-radius: 5px;
+        margin: 5% 0;
+        transition: all 0.3s linear;
+        font-weight: 700;
+    }
+    #password-div{
+        display: flex;
+    }
+    #password-div label{
+        flex: 1;
+    }
+    #password-div span{
+        flex: 1;
+    }
+    #togglepassword{
+        font-size: 11pt;
+        text-align: right;
+        padding: 20px 0 5px 0;
+    }
+    /*--------------------------------------------------Order Page (Mobile)-------------------------------------------------*/
+    #main-catalogue{
+        display: none;
+    }
+    #subnav{
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        margin: 17% 0 0 0;
+        padding: 29px 0 29px 0;
+        display: flex;
+    }
+    #subnav a{
+        font-size: 11pt;
+        flex: 1;
+        padding: 0 3% 0 0;
+    }
+    #subnav #profile{
+        float: none;
+        text-align: right;
+        padding: 0 0 0 0;
+    }
+    #subnav #my-cart{
+        float: none;
+        display: inline-block;
+        padding: 0 0 0 0;
+        flex: 2;
+        text-align: right;
+    }
+    #my-cart img{
+        display: none;
+    } 
+    #my-cart span{
+        display: inline;
+        padding: 0;
+        flex: 5;
+        box-sizing: border-box;
+    }
+    .catalogue{
+        margin: 0;
+        padding: 0;
+    }
+    .catalogue img{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        display: block;
+    }
+    .catalogue p{
+        padding: 2%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        font-size: 13pt;
+    }
+    .catalogue a{
+        text-align: center;
+        display: block;
+        padding: 3%;
+        margin: 0;
+        transition: all 0.1s linear;
+        width: 50%;
+        position: relative;
+        left: 25%;
+        right: 25%;
+    }
+    .catalogue-container{
+        display: block;
+        gap: 0;
+        margin: 0 0 7% 0;
+    }
+    .catalogue-container div{
+        display: block;
+        margin: 8% 0 0 0;
+    }
+    .catalogue-container .inner-box{
+        display: block;
+        margin: 0;
+        padding: 0 0 8% 0;
+        border-bottom: 1px solid gray;
+    }
+    #cake-catalogue{
+        display: none;
+    }
+    /*-------------------------------------------------Login Form-------------------------------------------------*/
+    #login-container{
+        height: max-content;
+        background-size: cover;
+        backdrop-filter: blur(5px);                    /* Adds blur radius */
+        margin: 25% 0 20% 0;
+    }
+    #login-form{
+        width: 60%;
+        position: relative;
+        left: 20%;
+        right: 20%;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.7);       /* Background for the content */
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);    /* Shadow around login form*/
+        outline: 8px solid white;                   /* Adds White outline */
+        border-radius: 20px;
+        border: 15px solid white;
+    }
+    #login-form span, #login-form p{
+        text-align: center;
+    }
+    #login-form a{
+        text-decoration: none;
+    }
+    #OR{
+        text-align: center;
+    }
+    #login-form-title{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 100px;
+        user-select: none;
+        border-radius: 15px 15px 0 0;
+        background: linear-gradient(-135deg, #826d8c, lightpink);
+        width: 100%;
+    }
+    /*--------------------------------cart CSS*-----------------------------------*/
+    #my-cart-container {
+        display: none;
+        font-weight: 300;
+    }
+    #my-cart-container h2{
+        text-align: center;
+        padding: 3%;
+    }
+    #my-cart-container table{
+        width: 90%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        border-collapse: collapse;
+    }
+    #my-cart-container th, #my-cart-container td {
+        padding: 10px;
+        text-align: left;
+    }
+    #my-cart-container tr{
+        border-bottom: 1px solid #ccc;
+    }
+    #closebtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 15pt;
+        border: none;
+        border-radius: 2px;
+    }
+    #cart-options{
+        display: flex;
+        gap: 6%;
+        width: 80%;
+        position: relative;
+        left: 10%;
+        right: 10%;
+        margin: 2% 0;
+    }
+    #cart-options div{
+        flex:1;
+        box-sizing: border-box;
+    }
+    #cart-options button{
+        display: inline-block;
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+    #cartTable button{
+        font-size: 13pt;
+        border: none;
+        border-radius: 2px;
+    }
+    #cartTable input{
+        width: 32px;
+    }
+    #total{
+        border: 2px solid black;
+        padding: 8px 15px 8px 15px;
+        margin: 8px 0 8px 0;
+        width: 25%;
+        position: relative;
+        right: 15%;
+        left: 60%;
+        text-align: center;
+        font-size: 14pt;
+    }
+/*------------------------------------------------Features Page-----------------------------------------------------*/
+    #features-container{
+        width: 80%;
+        position: relative;
+        left: 10%;
+        right: 10%;
+        margin: 30% 0;
+        height: 48vh;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    body, main, html, header, #catalogue-main {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+    }
+    a{
+        cursor: pointer;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        border-bottom: 2px solid #504357;
+        z-index: 2;
+        height: fit-content;
+    }
+    .logo{
+        width: 9%;
+        padding: 5px 0 5px 35px;
+        margin: 0;
+        float: left;
+    }
+    #mobile-nav{
+        display: none;
+    }
+    .navbar {
+        width: 52%;
+        display: inline;
+        position: relative;
+        left: 15%;
+        right: 0;  
+        margin: 0;
+        padding: 0;
+    }
+    .navbar ul{
+        list-style-type: none;
+        margin:0;
+    }
+    .navbar li {
+        float: left; 
+        padding: 4.5% 2% 4% 2%;
+        margin: 0;
+    }
+    .navbar a {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 12pt;
+        font-weight: 600;
+    }
+    .navbar li:is(:has(a.active)) {
+        position: relative;
+    }
+    .navbar li:is(:has(a.active))::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 60%;
+        height: 0.3em;
+        transform: translateX(-50%);
+    }
+    /*--------------------------------------------------------------------------Index Page--------------------------------------------------------------------------*/
+    
+    /*--------------------------------------------------------------------------Section 1--------------------------------------------------------------------------*/
+    section {
+        width: 100%;
+    }
+    article {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 500px;
+        height: auto;
+    }
+    #first-section{
+        margin: 10% 0 2% 0;
+        padding: 5% 0;
+        background-image: url('icecreams.jpg');
+        background-size: cover; /* This will make sure the image covers the entire element */
+        background-repeat: no-repeat; /* This prevents the image from repeating */
+        background-position: center center;
+        height: max-content;
+    }
+    #first-section-div-2{
+        padding: 2%;
+        border-radius: 20px;
+        width: 48%;
+        position: relative;
+        left: 25%;
+        right: 25%;
+        top: 32%;
+    }
+    #first-section h1{
+        font-size: 33pt;
+        text-align: center;
+        font-weight: 300;
+    }
+    #first-section p{
+        font-size: 12.5pt;
+        text-align: center;
+    }
+    /*------------------------------------------------------------------Popular Ice creams-----------------------------------------------------------------*/
+    #popular-item-container{
+        border-bottom: 2px solid gray;
+    }
+    #top-3-ice-creams{
+        width: 90%;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        margin: 3% 0 5% 0;
+    }
+    #top-3-ice-creams div{
+        display: block;
+        border-bottom: 1px solid lightgray;
+        padding: 8% 0;
+    }
+    #top-3-ice-creams div:nth-child(3){
+        border-bottom: none;
+    }
+    #top-3-ice-creams img{
+        width: 60%;
+        position: relative;
+        left: 20%;
+        right: 20%;
+    }
+    #top-3-ice-creams p:nth-child(odd) {
+        text-align: center;
+        font-size: 11.5pt;
+    }
+    #top-3-ice-creams p:nth-child(even) {
+        text-align: center;
+        font-weight: 800;
+        font-size: 16pt;
+    }
+    #popular-item-container h2{
+        text-align: center;
+        padding: 5% 0 0 0;
+        font-size: 24pt;
+    }
+    #popular-item-container h3{
+        text-align: center;
+        font-size: 16pt;
+    }
+    /*------------------------------------------------------------------Ice-Cream-Menu----------------------------------------------------------------*/
+    #ice-cream-menu{
+        display: block;
+    }
+    #ice-cream-menu table{
+        font-size: 12pt;
+        margin: 30px 0 30px 0;
+        border-collapse: collapse;
+    }
+    #ice-cream-menu th, td{
+        padding: 5px;
+        text-align: left;
+        font-weight: 400;
+    }
+    /* Apply alternating colors to odd rows */
+    #ice-cream-menu tr{
+        border-bottom: 2px solid rgb(255, 225, 230);
+    }
+    #ice-cream-menu h2{
+        font-size: 24pt;
+        font-weight: 800;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    /*---------------------------------------------------------------------Cake Menu------------------------------------------------------------------*/
+    #cake-menu{
+        margin: 5% 0 5% 0;
+        display: block;
+    }
+    #cake-menu div{
+        display: block;
+    }
+    #cake-menu h2{
+        font-size: 24pt;
+        text-align: center;
+        margin-top: 5%;
+    }
+    #cake-menu p{
+        text-align: center;
+    }
+    #cake-menu img{
+        width: 85%;
+        position: relative;
+        right: 7.5%;
+        left: 7.5%;
+    }
+    #cake-menu table{
+        font-size: 14pt;
+        margin: 0 0 0 10px;
+    }
+    /*--------------------------------------------------------------------------Details-Section-------------------------------------------------------------------------*/
+    #details {
+        height: max-content;
+        font-size: 11pt;
+        display: flex;
+    }
+    #details h3{
+        font-size: 11pt;
+    }
+    #details article{
+        width: 92%;
+        position: relative;
+        left: 4%;
+        right: 4%;
+        padding: 0;
+        margin: 0;
+    }
+    #details div:nth-child(2){
+        padding-left: 10%;
+    }
+    #details ol{
+        list-style-type: none;
+        margin: 0;
+    }
+    
+    #details div{
+        padding: 10px;
+        flex: 1; /* Distribute available space evenly among child elements */
+        box-sizing: border-box;
+    }
+    /*-------------------------------------------------------------------------------footer--------------------------------------------------------------------------------*/
+    footer{
+        padding: 1%;
+    }
+    footer p{
+        padding-left: 0;
+        font-size: 11pt;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    /*--------------------------------------------------------------------------Registration Page----------------------------------------------------------------------------*/
+    
+    #form-container{
+        position: relative;
+        margin: 15% 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+        width: 80%;
+    }
+    #regform{
+        border: none;
+        width: 75%;
+        position: relative;
+        right: 12.5%;
+        left: 12.5%;
+        margin: 0;
+        padding: 0;
+    }
+    input[type=text],input[type=email],input[type=password]{
+        padding: 2%;
+        width: 96%;
+        margin: 0;
+        border-radius: 5px;
+        border: 1px solid grey;
+        font-size: 12pt;
+    }
+    label{
+        padding: 20px 0 5px 0;
+        font-size: 15px; 
+        display: block;
+    }
+    .half-width-div{
+        display: flex;
+        gap: 5%;
+    }
+    .half-div{
+        flex: 1; /* Distribute available space evenly among child elements */
+        box-sizing: border-box;
+    }
+    .half-div input{
+        padding: 4%;
+        width: 92%;
+        margin: 0;
+        border-radius: 5px;
+        border: 1px solid grey;
+        font-size: 12pt;
+    }
+    .half-div select{
+        padding: 4%;
+        width: 100%;
+        margin: 0;
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 12pt;
+    }
+    .gender-div{
+        display: flex;
+        gap: 15%;
+    }
+    .gender-div label{
+        display: inline-block;
+    }
+    #regform #gender{
+        font-size: 15px;
+        padding: 3% 0 0 0;
+        display: block;
+    }
+    input[type=submit]{
+        height: 45px;
+        width: 40%;
+        position: relative;
+        left: 30%;
+        right: 30%;
+        border: none;
+        border-radius: 5px;
+        margin: 3% 0;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    /*-----------------------------------------------------------------------------Order Page-------------------------------------------------------------------------------*/
+    #main-catalogue{
+        display: none;
+    }
+    #login-container{
+        height: max-content;
+        margin: 15% 0 6% 0;
+    }
+    #login-form{
+        width: 60%;
+        position: relative;
+        left: 20%;
+        right: 20%;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.7); /* Background for the content */
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Shadow around login form*/
+        outline: 7px solid white; /* Adds White outline */
+        border-radius: 20px;
+        border: 15px solid white;
+    }
+    #login-form span, #login-form p{
+        text-align: center;
+    }
+    #login-form a{
+        text-decoration: none;
+    }
+    #OR{
+        text-align: center;
+    }
+    #login-form-title{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 100px;
+        user-select: none;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+    }
+    #subnav{
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        margin:10% 0 0 0;
+        padding: 29px 0 29px 0;
+    }
+    #subnav a{
+        font-size: 11pt;
+        padding: 0 3% 0 0;
+    }
+    #my-cart{
+        float: right;
+        width: 26%;
+    }
+    #profile{
+        float: right;
+    }
+    #my-cart img{
+        display: inline;
+        flex: 1;
+        box-sizing: border-box;
+        margin: 0 2% 0 0;
+    } 
+    #my-cart span{
+        display: inline;
+        padding: 0;
+        flex: 6;
+        box-sizing: border-box;
+    }
+    .catalogue{
+        margin: 0;
+        padding: 0;
+    }
+    .catalogue img{
+        width: 100%;
+        height: 100%;
+    }
+    .catalogue p{
+        padding: 3%;
+        margin: 0;
+        font-size: 10.5pt;
+        text-align: center;
+    }
+    .catalogue a{
+        text-align: center;
+        padding: 3%;
+        margin: 0;
+        transition: all 0.1s linear;
+        width: 100%;
+        display: block;
+    }
+    .inner-box{
+        display: block;
+        margin: 0;
+        padding: 5% 0 5% 0;
+    }
+    .inner-box p, .inner-box a{
+        flex: 1;
+        box-sizing: border-box;
+    }
+    #cake-catalogue, #my-cart-container{
+        display: none;
+    }
+    #cart-options{
+        display: flex;
+        gap: 10%;
+        width: 70%;
+        position: relative;
+        left: 15%;
+        right: 15%;
+        margin: 2% 0;
+    }
+    #cart-options div{
+        flex:1;
+        box-sizing: border-box;
+    }
+    #cart-options button{
+        display: inline-block;
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+    #cartTable button{
+        font-size: 13pt;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    #cartTable input{
+        width: 32px;
+    }
+    #total{
+        border: 2px solid black;
+        padding: 8px 15px 8px 15px;
+        margin: 8px 0 8px 0;
+        width: 25%;
+        position: relative;
+        right: 15%;
+        left: 60%;
+        text-align: right;
+        font-size: 14pt;
+    }
+/*------------------------------------------------Features Page-----------------------------------------------------*/
+#features-container{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    margin: 30% 0;
+    height: 25vh;
+}
+}
+@media screen and (min-width: 901px) and (max-width: 1150px){
+    #cake-menu{
+        margin: 5% 0 5% 0;
+        gap: 0;
+        display: block;
+    }
+    #cake-menu div{
+        flex: none;
+        display: block;
+    }
+    #cake-menu div:nth-child(2){
+        position: relative;
+        width: 70%;
+        left: 15%;
+        right: 15%;
+        margin: 0;
+        padding: 0;
+    }
+    #cake-menu h2{
+        font-size: 24pt;
+        text-align: center;
+        padding-top: 2%;
+    }
+    #cake-menu p{
+        text-align: center;
+    }
+    #cake-menu img{
+        position: relative;
+        width: 70%;
+        left: 15%;
+        right: 15%;
+        margin: 0;
+        padding: 0;
+    }
+    #cake-menu table{
+        font-size: 14pt;
+        margin: 0;
+    }
+    /*--------------------------------------------------Registration Page-------------------------------------------------------*/
+    #form-container{
+        position: relative;
+        margin: 8% 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+        width: 60%;
+    }
+    #regform{
+        border: none;
+        width: 85%;
+        position: relative;
+        right: 7.5%;
+        left: 7.5%;
+        margin: 0;
+        padding: 0;
+    }
+    /*------------------------------------------------------Order Page-------------------------------------------------------------*/
+    #login-form{
+        width: 50%;
+        position: relative;
+        left: 25%;
+        right: 25%;
+    }
+    .catalogue a{
+        text-align: center;
+        padding: 3%;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+    .catalogue p{
+        text-align: center;
+    }
+    .inner-box{
+        display: block;
+        margin: 0;
+        padding: 5% 0 5% 0;
+    }
+    #my-cart{
+        width: 20%;
+    }
+}

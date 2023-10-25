@@ -1,222 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sweet Life Resgistration Page</title>
+<title>Become a Member of Sweet Life</title>
 <meta charset="utf-8">
-<meta name="description" content="Web development">
-<meta name="keywords" content="HTML, CSS, JavaScript">
-<meta name="author" content="your name">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url("https://img.freepik.com/free-photo/marbled-blue-abstract-background-liquid-marble-pattern_1258-90996.jpg");
-    background-color: none;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
-img{
-    width: 675px;
-    height: 500px;
-}
-.logo{
-    width: 80px;
-    height: 80px;
-    margin-left: 200px;
-}
-.navbar {
-    background-color: darkpink;
-    overflow: hidden;
-    display: inline-flex;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    height: 80px;
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-    overflow: hidden;
-    background-color: #db765c;
-}
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px;
-    margin-left: 50px;
-    margin-top: 30px;
-    text-decoration: none;
-    font-size:large;
-}
-.navbar a:hover {
-    text-decoration: underline #086444;
-    border-radius: 5px;
-    height: fit-content;
-}
-span{
-    color: red;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#myform{
-    margin-top: 10px;
-    background-color:#dd519d;
-    width: 40%;
-    position: relative;
-    left: 30%;
-    border: 5px solid black;
-    border-style:dashed;
-}
-label,input,select,textarea{
-    color: black;
-    font-weight:normal;
-    margin: 1%;
-    display: inline-flexbox;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-}
-span{
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-}
-h1{
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-.button{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #086444;
-    color: white;
-    width: 100px;
-    height: 50px;
-    position: relative;
-    left: 38%;
-    font-size: large;
-    border-radius: 30px;
-}
-.button:hover{
-    background-color: aquamarine;
-    color: black;
-}
-.end{
-    text-align: center;
-    font-size: large;
-    color: white;
-    background-color: #db765c;
-    font-size: 16px;
-    font-weight: bold;
- }
-</style>
+<meta name="description" content="Register, create an account to receive more updates and exciting deals">
+<meta name="keywords" content="ice cream, artisan, flavors, menu, Willowbrook, Sweet Scoops, sign up, register, follow up">
+<meta name="author" content="Lara Bianco">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
 </head>
-<body>
-    <div class="navbar">
-        <a href="index.html">HOME</a>
-        <a href="registration.html">REGISTRATION</a>
-        <a href="order.html">ORDER</a>
-        <img class="logo" src="C:\Users\faraz\OneDrive\Desktop\wd-assign2\images\logob.png">
+<header>
+  <nav id="mobile-nav">
+    <a id="mobile-menu">&#9776;</a>
+    <div id="sub-mobile-menu">
+      <ul>
+        <li><a id="close-sub-menu">Close Menu</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="registration.html" class="active">REGISTRATION</a></li>
+        <li><a href="order.html">ORDER</a></li>
+        <li><a href="features.html">FEATURES</a></li>
+      </ul> 
     </div>
+  </nav>
+  <img class="logo" src="images/sweet_life_logo.png" alt="sweet life logo">
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="registration.html"  class="active">REGISTRATION</a></li>
+      <li><a href="order.html">ORDER</a></li>
+      <li><a href="features.html">FEATURES</a></li>
+    </ul>        
+  </nav>
+</header>
 
-    <form id="myform">
-      <h1>REGISTRATION</h1>
-        <label>Username *</label><input id="name" type="text" placeholder="JohnDoe" required><br>
-        <span id="nameerror" class="error"></span><br>
-
-        <label>Password (atleast 9 digits) *</label><input id="password" type="password" required><br>
-        <span id="passworderror" class="error"></span><br>
-
-        <label>Gender *</label>
-        <input type="radio" name="gender" value="gender" required>
-        <label for="gender">Male</label>
-        <input type="radio" name="gender" value="gender" required>
-        <label for="gender">Female</label><br>
-
-        <label>Email *</label><input id="email" type="email" placeholder="john.doe@xyz.com"><br>
-        <span id="emailerror" class="error"></span><br>
-
-        <label>Did you join sweet life community in the past? *</label>
-        <select required> 
-            <option>Yes</option>
-            <option>No</option>
-        </select><br><br>
-  <label>Your Favourite Items</label><br>
-  <input type="checkbox" name="item1">
-  <label for="item1">Vanilla Icecream</label><br>
-  <input type="checkbox" name="item2">
-  <label for="item2">Chocolate Icecream</label><br>
-  <input type="checkbox" name="item3">
-  <label for="item3">Sundae</label><br>
-  <input type="checkbox" name="item4">
-  <label for="item4">Chocolate Peanut Butter</label><br>
-  <input type="checkbox" name="item5">
-  <label for="item5">Sweet Life Special</label><br>
-  <input type="checkbox" name="item6">
-  <label for="item6">PinaColada</label><br>
-  <input type="checkbox" name="item7">
-  <label for="item7">Cookie Dough</label><br>
-  <input type="checkbox" name="item8">
-  <label for="item8">Butter Pecan</label><br>
-  <input type="checkbox" name="item9">
-  <label for="item9">Sweet Caramel</label><br>
-    <input type="checkbox" name="item10">
-  <label for="item10">Apple Pie</label><br>
-    <input type="checkbox" name="item11">
-    <label for="item11">Funfetti</label><br>
-    <input type="checkbox" name="item12">
-  <label for="item12">Lemon Raspberry</label><br>
-    <input type="checkbox" name="item13">
-  <label for="item13">Strawberry Cheesecake</label><br>
-    <input type="checkbox" name="item14">
-  <label for="item14">Carrot Cake (nut-free)</label><br>  
-
-  <textarea placeholder="Write something about yourself (optional)"></textarea><br>
-  <input class="button" type="submit" value="SUBMIT">
-    </form>
-    <p class="end">Sweet Life ℗</p>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    let form = document.getElementById('myform');
-    form.addEventListener('submit', function(event) {
-      let name = document.getElementById('name').value;
-      let email = document.getElementById('email').value;
-      let password = document.getElementById('password').value;
-      let nameError = document.getElementById('nameerror');
-      let emailError = document.getElementById('emailerror');
-      let passwordError = document.getElementById('passworderror');
-      let genderError = document.getElementById('gendererror');
-
-      nameError.textContent = ''; // Clear previous error messages
-      emailError.textContent = '';
-      passwordError.textContent = '';
-
-      if (name === "") {
-        nameError.textContent = 'Please enter a username.';
-        event.preventDefault(); // Prevent form submission
-      }
-      else if (/[\d]/.test(name)) {
-        nameError.textContent = 'Name cannot contain numbers.';
-        event.preventDefault(); // Prevent form submission
-      }
-
-      if (email === "") {
-        emailError.textContent = 'Please enter an email address.';
-        event.preventDefault(); // Prevent form submission
-      }
-
-      if (password === "") {
-        passwordError.textContent = 'Please enter a password.';
-        event.preventDefault(); // Prevent form submission
-      } else if (password.length < 9) {
-        passwordError.textContent = 'Password must be at least 9 characters long.';
-        event.preventDefault(); // Prevent form submission
-      }
+<main>
+  <div id="form-container">
+    <div id="form-title">
+      <h1>Create An Account</h1>
+    </div>
+    <form id="regform" method="post" action=" http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+      <label for="fname">Full Name *</label><input class="input-fields" id="fname" type="text" name="FullName" placeholder="Enter full name">
+      <label for="email">Email Address *</label><input id="email" type="email" name="Email" placeholder="Enter email address">
+      <div class="half-width-div">
+        <div class="half-div">
+          <label for="mobile">Mobile Number *</label><input id="mobile" type="text" name="MobileNumber" placeholder="Enter phone number">
+        </div>
+        <div class="half-div">
+          <label for="date">Birth Date *</label><input id="date" type="date" name="Date">
+        </div> 
+      </div>
+      <fieldset class="gender-div">
+        <legend>Gender *</legend>
+        <div>
+          <input id="gmale" type="radio" name="Gender" value="male">
+          <label for="gmale">Male</label>
+        </div>
+        <div>
+          <input id="gfemale" type="radio" name="Gender" value="female">
+          <label for="gfemale">Female</label>
+        </div>
+        <div>
+          <input id="gother" type="radio" name="Gender" value="other">
+          <label for="gother">Prefer not to say</label>
+        </div>     
+      </fieldset>      
+      <label for="address">Address *</label>
+      <input id="address" name="Address" type="text" placeholder="Enter street address">
+      <div class="half-width-div">
+        <div class="half-div">
+          <label for="country">Country *</label>
+          <select id="country"  name="Country"> 
+            <option>Australia</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>United Kingdom</option>
+            <option>United Arab Emirates</option>
+          </select>
+        </div>
+        <div class="half-div">
+          <label for="postal-code">Postal Code *</label>
+          <input id="postal-code" name="Postal-code" type="number" placeholder="Enter postal code">
+        </div>
+      </div>
+        
       
-      if (nameError.textContent === '' && emailError.textContent === '' && passwordError.textContent === '') {
-        // All fields are valid, show an alert
-        alert("Form submitted successfully!");
-      }
-    });
-  });
-</script>    
-</body>
+        <label for="uname">User Name *</label>
+        <input class="input-fields" name="Username" id="uname" type="text" placeholder="Enter user name">
+        <div id="password-div">
+          <label for="password">Password *</label>
+          <a id="togglepassword">Show Password</a>
+        </div>
+        <input class="input-fields" name="Password" id="password" type="password" placeholder="Enter password">
+        <label for="re-password">Confirm Password *</label>
+        <input class="input-fields" name="ConfirmPassword" id="re-password" type="password" placeholder="Re-Enter password">
+      
+
+      <input class="button" type="submit" value="SUBMIT" >
+
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>Copyright © 2023. Sweet Life Australia. All Rights Reserved.</p>
+</footer>
 </html>
